@@ -1,0 +1,2078 @@
+Name: UI
+Type: UICategoryFolder
+Children:
+- Name: DefaultStyleSheet
+  Id: g=8da2b5865c73184b748c69f73d34bedf
+  Type: StyleSheet
+  Children:
+  - Name: ButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ButtonStyle
+    - Name: Accent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#075982"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+    - Name: BorderedRectangular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+    - Name: BorderedCircular
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#0fafff"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#e4e4e4"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Emergency
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#eb001b"
+      - Name: TextColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffffff"
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#f8e71c"
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 5.0
+      - Name: Radius
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: -1.0
+    - Name: Transparent
+      Type: ButtonStyle
+      Children:
+      - Name: Color
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderColor
+        Type: BaseDataVariableType
+        DataType: Color
+      - Name: BorderWidth
+        Type: BaseDataVariableType
+        DataType: Size
+  - Name: InputBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: InputBoxStyle
+  - Name: SwitchStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: SwitchStyle
+  - Name: GaugeStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: GaugeStyle
+  - Name: NavigationPanelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: NavigationPanelStyle
+  - Name: ChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ChartStyle
+  - Name: DataListStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: DataListStyle
+      Children:
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 20.0
+  - Name: ToolTipStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ToolTipStyle
+  - Name: ScrollBarStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScrollBarStyle
+  - Name: AccordionStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: AccordionStyle
+  - Name: PieChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: PieChartStyle
+  - Name: HistogramChartStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: HistogramChartStyle
+  - Name: LabelStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: LabelStyle
+  - Name: RadioButtonStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RadioButtonStyle
+  - Name: CheckBoxStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: CheckBoxStyle
+  - Name: RectangleStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: RectangleStyle
+      Children:
+      - Name: BorderThickness
+        Type: BaseDataVariableType
+        DataType: Size
+        Value: 1.0
+  - Name: ScreenStyles
+    Type: BaseObjectType
+    Children:
+    - Name: Default
+      Type: ScreenStyle
+- Name: NativePresentationEngine
+  Type: NativePresentationEngine
+  ReferenceType: HasOrderedComponent
+  Children:
+  - Name: VirtualKeyboard
+    Type: BaseDataVariableType
+    DataType: VirtualKeyboardEngineTypeEnum
+  - Name: StartWindow
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/BackButtonWithAlias/UI/MainWindow"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Window"
+  - Name: StyleSheet
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/BackButtonWithAlias/UI/DefaultStyleSheet"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/StyleSheet"
+  - Name: StartingUser
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Users/Anonymous"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/UserType"
+  - Name: Sessions
+    Type: BaseObjectType
+- Name: MainWindow
+  Id: g=01a7e8933afd7c95fe894b0859308138
+  Supertype: Window
+  Children:
+  - Name: Width
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1024.0
+  - Name: Height
+    Type: BaseDataVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 768.0
+  - Name: Caption
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/BackButtonWithAlias@BrowseName"
+  - Name: VerticalLayout1
+    Type: ColumnLayout
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: PanelLoader1
+      Type: PanelLoader
+      Children:
+      - Name: Panel
+        Type: NodePointer
+        DataType: NodeId
+        Value: "/Objects/BackButtonWithAlias/UI/Screens/Main"
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: CurrentPanel
+        Type: NodePointer
+        DataType: NodeId
+        AccessLevel: Read
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+      - Class: Reference
+        Target: ns=3;i=478
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: BackProviderWithAlias
+        Type: NetLogic
+        Children:
+        - Class: Method
+          Name: Back
+        - Class: Method
+          Name: LoadPreviousAliasId
+      - Name: PreviousAliasId
+        Type: NodePointer
+        DataType: NodeId
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+    - Name: HorizontalLayout1
+      Type: RowLayout
+      Children:
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 50.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 100.0
+      - Name: ContentAlignment
+        Type: BaseVariableType
+        DataType: ContentHorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
+      - Name: VerticalAlignment
+        Type: BaseVariableType
+        DataType: VerticalAlignment
+        ModellingRule: Optional
+        Value: 1
+      - Name: Button0
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Main"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 800
+        - Name: MouseClickEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{PanelLoader1}@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/BackButtonWithAlias/UI/Screens/Main"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+          - Name: EventArguments
+            Type: MouseClickEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Button1
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Ax1"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 800
+        - Name: MouseUpEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/BackButtonWithAlias/UI/Screens/AxisScreen"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+                  Value: "/Objects/BackButtonWithAlias/Model/DataObjects/AxisObjects/Axis1"
+          - Name: EventArguments
+            Type: MouseUpEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: MouseDownEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1/BackProviderWithAlias@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "LoadPreviousAliasId"
+          - Name: EventArguments
+            Type: MouseDownEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Button2
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Ax1_Spd"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 800
+        - Name: MouseUpEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/BackButtonWithAlias/UI/Screens/SpeedScreen"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+                  Value: "/Objects/BackButtonWithAlias/Model/DataObjects/AxisObjects/Axis1Speed"
+          - Name: EventArguments
+            Type: MouseUpEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: MouseDownEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1/BackProviderWithAlias@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "LoadPreviousAliasId"
+          - Name: EventArguments
+            Type: MouseDownEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Button3
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Ax1_Psn"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 800
+        - Name: MouseUpEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/BackButtonWithAlias/UI/Screens/PositionScreen"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+                  Value: "/Objects/BackButtonWithAlias/Model/DataObjects/AxisObjects/Axis1Position"
+          - Name: EventArguments
+            Type: MouseUpEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: MouseDownEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1/BackProviderWithAlias@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "LoadPreviousAliasId"
+          - Name: EventArguments
+            Type: MouseDownEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Button4
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Ax1_Trq"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 800
+        - Name: MouseUpEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/BackButtonWithAlias/UI/Screens/TorqueScreen"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+                  Value: "/Objects/BackButtonWithAlias/Model/DataObjects/AxisObjects/Axis1Torque"
+          - Name: EventArguments
+            Type: MouseUpEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: MouseDownEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1/BackProviderWithAlias@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "LoadPreviousAliasId"
+          - Name: EventArguments
+            Type: MouseDownEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Button5
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Ax2"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 800
+        - Name: MouseUpEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/BackButtonWithAlias/UI/Screens/AxisScreen"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+                  Value: "/Objects/BackButtonWithAlias/Model/DataObjects/AxisObjects/Axis2"
+          - Name: EventArguments
+            Type: MouseUpEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: MouseDownEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1/BackProviderWithAlias@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "LoadPreviousAliasId"
+          - Name: EventArguments
+            Type: MouseDownEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Button8
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Ax2_Spd"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 800
+        - Name: MouseUpEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/BackButtonWithAlias/UI/Screens/SpeedScreen"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+                  Value: "/Objects/BackButtonWithAlias/Model/DataObjects/AxisObjects/Axis2Speed"
+          - Name: EventArguments
+            Type: MouseUpEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: MouseDownEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1/BackProviderWithAlias@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "LoadPreviousAliasId"
+          - Name: EventArguments
+            Type: MouseDownEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Button6
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Ax3"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 800
+        - Name: MouseUpEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/BackButtonWithAlias/UI/Screens/AxisScreen"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+                  Value: "/Objects/BackButtonWithAlias/Model/DataObjects/AxisObjects/Axis3"
+          - Name: EventArguments
+            Type: MouseUpEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: MouseDownEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1/BackProviderWithAlias@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "LoadPreviousAliasId"
+          - Name: EventArguments
+            Type: MouseDownEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+      - Name: Button7
+        Type: Button
+        Children:
+        - Name: Text
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"Ax3_Trq"}
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 2
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 100.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 80.0
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
+        - Name: FontWeight
+          Type: BaseDataVariableType
+          DataType: FontWeightEnum
+          ModellingRule: Optional
+          Value: 800
+        - Name: MouseUpEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseUpEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "ChangePanel"
+              - Name: InputArguments
+                Type: BaseObjectType
+                Children:
+                - Name: NewPanel
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelNewPanelDescription"}
+                  Value: "/Objects/BackButtonWithAlias/UI/Screens/TorqueScreen"
+                - Name: AliasNode
+                  Type: BaseDataVariableType
+                  DataType: NodeId
+                  Description: {"NamespaceIndex":3,"TextId":"ChangePanelAliasNodeDescription"}
+                  ValueRank: ScalarOrOneDimension
+                  Value: "/Objects/BackButtonWithAlias/Model/DataObjects/AxisObjects/Axis3Torque"
+          - Name: EventArguments
+            Type: MouseUpEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: MouseDownEventHandler1
+          Type: EventHandler
+          Children:
+          - Name: ListenEventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseDownEvent"
+          - Name: MethodsToCall
+            Type: BaseObjectType
+            Children:
+            - Name: MethodContainer1
+              Type: BaseObjectType
+              Children:
+              - Name: ns=2;ObjectPointer
+                Type: NodePointer
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType"
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../PanelLoader1/BackProviderWithAlias@NodeId"
+                  Children:
+                  - Name: Mode
+                    Type: BaseVariableType
+                    DataType: DynamicLinkMode
+                    ModellingRule: Optional
+                    Value: 2
+              - Name: ns=2;Method
+                Type: BaseDataVariableType
+                DataType: String
+                Value: "LoadPreviousAliasId"
+          - Name: EventArguments
+            Type: MouseDownEvent
+            Children:
+            - Name: EventId
+              Type: PropertyType
+              DataType: ByteString
+            - Name: EventType
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceNode
+              Type: PropertyType
+              DataType: NodeId
+            - Name: SourceName
+              Type: PropertyType
+              DataType: String
+            - Name: Time
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: ReceiveTime
+              Type: PropertyType
+              DataType: UtcTime
+            - Name: Message
+              Type: PropertyType
+              DataType: LocalizedText
+            - Name: Severity
+              Type: PropertyType
+              DataType: UInt16
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: Button1
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Back"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 35.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../VerticalLayout1/PanelLoader1/BackProviderWithAlias@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Back"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+  - Name: Button2
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Alias"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 35.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=2;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../../VerticalLayout1/PanelLoader1/BackProviderWithAlias@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=2;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "LoadPreviousAliasId"
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+- File: Screens/Screens.yaml
+- File: DialogBoxes/DialogBoxes.yaml
+- File: Keyboards/Keyboards.yaml

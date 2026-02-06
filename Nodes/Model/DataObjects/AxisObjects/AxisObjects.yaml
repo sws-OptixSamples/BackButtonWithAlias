@@ -1,0 +1,1387 @@
+Name: AxisObjects
+Type: FolderType
+Children:
+- Name: Axis1
+  Id: g=dc1cf5d4575f3eda0080ceeb6844f6ef
+  Type: AxisObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: Position
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: Torque
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis2
+  Id: g=8b19ce40d4a93495bab85002ed3f7afc
+  Type: AxisObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: Position
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: Torque
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis3
+  Id: g=268578a7e0e7f3ee47dd206ed279a077
+  Type: AxisObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: Position
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: Torque
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis4
+  Type: AxisObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: Position
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: Torque
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis1Position
+  Id: g=0523731fd6739156e5653d9dfa97c68a
+  Type: AxisPositionObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: PosAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: PosAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: PosAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis2Position
+  Type: AxisPositionObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: PosAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: PosAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: PosAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis3Position
+  Type: AxisPositionObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: PosAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: PosAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: PosAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis4Position
+  Type: AxisPositionObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: PosAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: PosAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: PosAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis1Speed
+  Id: g=f2a51a232587421dcdab3346f19e6926
+  Type: AxisSpeedObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: SpdAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: SpdAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: SpdAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis2Speed
+  Id: g=431b612e5dcf6b2d4553d9825ef64911
+  Type: AxisSpeedObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: SpdAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: SpdAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: SpdAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis3Speed
+  Type: AxisSpeedObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: SpdAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: SpdAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: SpdAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis4Speed
+  Type: AxisSpeedObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: SpdAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: SpdAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: SpdAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis1Torque
+  Id: g=3db55670cefae93914dd4ec6976d034a
+  Type: AxisTorqueObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: TrqAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: TrqAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: TrqAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis2Torque
+  Type: AxisTorqueObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: TrqAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: TrqAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: TrqAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis3Torque
+  Id: g=b0cb1b959be7be9c670f28baae5aa126
+  Type: AxisTorqueObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: TrqAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: TrqAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: TrqAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+- Name: Axis4Torque
+  Type: AxisTorqueObject
+  Children:
+  - Name: Name
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "..@BrowseName"
+  - Name: TrqAttrib1
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: TrqAttrib2
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"
+  - Name: TrqAttrib3
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../..@BrowseName"
+      - Name: Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../..@BrowseName"

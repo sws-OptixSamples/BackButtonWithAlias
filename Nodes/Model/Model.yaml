@@ -1,0 +1,6 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: AliasMemory/AliasMemory.yaml
+- File: DataObjects/DataObjects.yaml
+- File: CustomObjects/CustomObjects.yaml
